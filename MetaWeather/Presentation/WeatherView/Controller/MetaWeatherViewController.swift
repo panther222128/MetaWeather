@@ -117,7 +117,7 @@ extension MetaWeatherViewController {
     private func configureWeatherInformationListTableView() {
         self.weatherInformationTableView.separatorStyle = UITableViewCell.SeparatorStyle.none
         let headerWidth = self.weatherInformationTableView.contentSize.width
-        let header = WeatherListTitleView(frame: CGRect(x: 0, y: 0, width: headerWidth, height: 40))
+        let header = WeatherInformationTableHeaderView(frame: CGRect(x: 0, y: 0, width: headerWidth, height: 40))
         header.locationTitleLabel.text = "Local"
         header.todayTitleLabel.text = "Today"
         header.tomorrowTitleLabel.text = "Tomorrow"

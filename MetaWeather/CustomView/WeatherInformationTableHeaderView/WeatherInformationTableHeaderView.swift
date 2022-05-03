@@ -35,7 +35,7 @@ class WeatherInformationTableHeaderView: UIView {
     }
     
     func loadViewFromXib(){
-        let viewFromXib = Bundle.main.loadNibNamed("WeatherListTitleView", owner: self, options: nil)![0] as! UIView
+        let viewFromXib = Bundle.main.loadNibNamed("WeatherInformationTableHeaderView", owner: self, options: nil)![0] as! UIView
         viewFromXib.frame = self.bounds
         addSubview(viewFromXib)
     }
