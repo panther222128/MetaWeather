@@ -7,9 +7,13 @@
 <img src="https://user-images.githubusercontent.com/61342175/166468144-867bfae6-d0e7-42da-b7f1-b89d8a5f2a54.gif" width = 250 align = left>  
 
 
+
+
 #### iPhone 13
 
 <img src="https://user-images.githubusercontent.com/61342175/166468451-c75a3636-8f17-4133-b865-13b14a4c6451.gif" width = 250 align = left>  
+
+
 
 
 #### iPhone 13 Pro Max
@@ -17,6 +21,8 @@
 스토리보드에서 아이폰 13 프로 맥스를 선택하지 않으면, 왼쪽 두 번째 경계선이 두 줄로 나옵니다.
 
 <img src="https://user-images.githubusercontent.com/61342175/166468529-5cdba98f-f0c5-486d-98f5-6622a73dd8e8.gif" width = 250 align = left>  
+
+
 
 
 ## 2. 아키텍처 관련
