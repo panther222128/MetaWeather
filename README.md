@@ -2,15 +2,13 @@
 
 ## 1. 시뮬레이터 실행 화면
 
----
-
 #### iPhone 13 mini
 
-<img src="https://user-images.githubusercontent.com/61342175/166468144-867bfae6-d0e7-42da-b7f1-b89d8a5f2a54.gif" width = 250 align = left>
+<img src="https://user-images.githubusercontent.com/61342175/166468144-867bfae6-d0e7-42da-b7f1-b89d8a5f2a54.gif" width = 250 align = left>  
 
 #### iPhone 13
 
-<img src="https://user-images.githubusercontent.com/61342175/166468451-c75a3636-8f17-4133-b865-13b14a4c6451.gif" width = 250 align = left>
+<img src="https://user-images.githubusercontent.com/61342175/166468451-c75a3636-8f17-4133-b865-13b14a4c6451.gif" width = 250 align = left>  
 
 #### iPhone 13 Pro Max
 
@@ -18,21 +16,13 @@
 
 <img src="https://user-images.githubusercontent.com/61342175/166468529-5cdba98f-f0c5-486d-98f5-6622a73dd8e8.gif" width = 250 align = left>
 
----
-
 ## 2. 아키텍처 관련
-
----
 
 1. 네트워크 레이어 및 데이터 레이어에서 데이터 요청 및 도메인 변환을 위한 DTO(Data Transfer Object)가 있습니다.
 2. 작은 규모의 프로젝트이기 때문에 MVC로도 충분하지만, MVVM으로 구현했으며 UseCase 레이어가 있습니다. 레포지토리 패턴이나 코디네이터 패턴까지 활용하지는 않았습니다.
 3. Observable 객체를 만들어 binding하고 있습니다.
 
----
-
 ## 3. 커스텀 뷰
-
----
 
 1. WeatherInformationTableHeaderView
 
