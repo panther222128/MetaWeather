@@ -7,7 +7,7 @@
 
 import UIKit
 
-class WeatherListTitleView: UIView {
+class WeatherInformationTableHeaderView: UIView {
     
     @IBOutlet weak var locationTitleContainerView: UIView!
     @IBOutlet weak var todayTitleContainerView: UIView!
@@ -42,7 +42,7 @@ class WeatherListTitleView: UIView {
     
 }
 
-extension WeatherListTitleView {
+extension WeatherInformationTableHeaderView {
     
     private func drawBorderLine() {
         self.locationTitleContainerView.addTopBorder(with: Values.borderColor, with: Values.borderWidth)
