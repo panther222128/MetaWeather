@@ -60,7 +60,6 @@ extension WeatherInformationTableHeaderView {
     }
     
     private func applyFontToLabel() {
-        self.locationTitleLabel.font = UIFont.boldSystemFont(ofSize: CGFloat(Values.weatherListHeaderTitleFontSize))
         self.todayTitleLabel.font = UIFont.boldSystemFont(ofSize: CGFloat(Values.weatherListHeaderTitleFontSize))
         self.tomorrowTitleLabel.font = UIFont.boldSystemFont(ofSize: CGFloat(Values.weatherListHeaderTitleFontSize))
     }
