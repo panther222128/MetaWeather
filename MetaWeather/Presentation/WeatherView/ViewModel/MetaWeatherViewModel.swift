@@ -42,7 +42,7 @@ final class DefaultMetaWeatherViewModel: MetaWeatherViewModel {
                 let observable = Observable(data)
                 self.searchResultsStorage = observable
                 self.woeids = data.map( { $0.woeid } )
-                self.fetchConsolidatedWeathers { result in
+                self.fetchLocationWeathers { result in
                     switch result {
                     case .success(_):
                         self.isError.value = false
@@ -65,8 +65,8 @@ final class DefaultMetaWeatherViewModel: MetaWeatherViewModel {
         })
     }
     
-    private func fetchConsolidatedWeather(locationParameter: Int, completion: @escaping (Result<LocationWeathers, Error>) -> Void) {
-        self.metaWeatherUseCase.fetchConsolidatedWeather(locationParameter: locationParameter) { result in
+    private func fetchLocationWeather(locationParameter: Int, completion: @escaping (Result<LocationWeathers, Error>) -> Void) {
+        self.metaWeatherUseCase.fetchLocationWeather(locationParameter: locationParameter) { result in
             switch result {
             case .success(let data):
                 self.isError.value = false
@@ -80,9 +80,9 @@ final class DefaultMetaWeatherViewModel: MetaWeatherViewModel {
         }
     }
 
-    private func fetchConsolidatedWeathers(completion: @escaping (Result<LocationWeathers, Error>) -> Void) {
+    private func fetchLocationWeathers(completion: @escaping (Result<LocationWeathers, Error>) -> Void) {
         for i in self.woeids {
-            self.fetchConsolidatedWeather(locationParameter: i) { result in
+            self.fetchLocationWeather(locationParameter: i) { result in
                 switch result {
                 case .success(let data):
                     let observableValue = Observable(data).value

@@ -9,7 +9,7 @@ import Foundation
 
 protocol MetaWeatherUseCase {
     func fetchSearchResults(searchKeyword: String, completion: @escaping (Result<[LocationSearchResult], DataTransferServiceError>) -> Void)
-    func fetchConsolidatedWeather(locationParameter: Int, completion: @escaping (Result<LocationWeathers, DataTransferServiceError>) -> Void)
+    func fetchLocationWeather(locationParameter: Int, completion: @escaping (Result<LocationWeathers, DataTransferServiceError>) -> Void)
 }
 
 final class DefaultMetaWeatherUseCase: MetaWeatherUseCase {
@@ -35,7 +35,7 @@ final class DefaultMetaWeatherUseCase: MetaWeatherUseCase {
         }
     }
     
-    func fetchConsolidatedWeather(locationParameter: Int, completion: @escaping (Result<LocationWeathers, DataTransferServiceError>) -> Void) {
+    func fetchLocationWeather(locationParameter: Int, completion: @escaping (Result<LocationWeathers, DataTransferServiceError>) -> Void) {
         let endpoint = apiEndpoint.getLocationEndpoint(with: locationParameter)
         self.dataTransferService.request(with: endpoint, dataType: LocationWeatherResponseDTOs.self) { result in
             switch result {
