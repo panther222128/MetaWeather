@@ -26,8 +26,4 @@ final class Observable<T> {
         listener = closure
     }
     
-    func map() {
-        
-    }
-    
 }
